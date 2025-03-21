@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="http://blog.bb-dd.com/categories/技术/php/"/>
+  
+  <link rel="canonical" href="http://blog.bb-dd.com/2025-03-21/mysql-binlog/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,19 +34,24 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>分类：PHP - 李俊东-博客</title>
-  <meta name="keywords" content="李俊东 博客 技术 php golang">
+  <title>MySQL Binlog - 李俊东-博客</title>
+  <meta name="keywords" content="技术,后端,MySQL,理论,李俊东 博客 技术 php golang">
   <meta desc name="description" content="李俊东-博客-description - 李俊东 - 李俊东-博客">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="李俊东-博客">
-<meta property="og:url" content="http://blog.bb-dd.com/categories/%E6%8A%80%E6%9C%AF/PHP/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MySQL Binlog">
+<meta property="og:url" content="http://blog.bb-dd.com/2025-03-21/MySQL-Binlog/index.html">
 <meta property="og:site_name" content="李俊东-博客">
-<meta property="og:description" content="李俊东-博客-description">
+<meta property="og:description" content="介绍日志主要分为错误日志、慢查日志、查询日志、事物日志、二进制日志类型。像数据备份、主主、主备、主从、故障恢复等都需要通过binlog来做数据同步。当MySQL执行增删改时都会在binlog中留下记录日志，对于数据表的变更操作也会留下记录。 binlog记录的数据  DDl 用户操作数据库、表、行的记录。例如：Create、Drop、Alter DML 用户对数据的操作，例如：Insert、Upd">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2025-03-21T04:48:58.000Z">
+<meta property="article:modified_time" content="2025-03-21T05:44:30.052Z">
 <meta property="article:author" content="李俊东">
-<meta property="article:tag" content="李俊东 博客 技术 php golang">
+<meta property="article:tag" content="技术">
+<meta property="article:tag" content="后端">
+<meta property="article:tag" content="MySQL">
+<meta property="article:tag" content="理论">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2545,7 +2550,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="/images/home.jpg"></div>
 
@@ -2585,27 +2590,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.bb-dd.com/2025-02-27/你的-PHP-文章标题/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="http://blog.bb-dd.com/2025-03-21/MySQL-Binlog/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="李俊东-博客">
   </span>
@@ -2614,155 +2601,215 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="李俊东-博客-description">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2025-02-27/%E4%BD%A0%E7%9A%84-PHP-%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/"  itemprop="url">
-        你的 PHP 文章标题
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        hhh
+    
+      <h1 class="title" itemprop="name headline">
+        MySQL Binlog
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="/images/user.png" class="lazyload" data-srcset="/images/user.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">李俊东</p>
+  </a>
+</div>
 
-      
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><span class="sep"></span><a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/MySQL/">MySQL</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url"><span itemprop="name">技术</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%8A%80%E6%9C%AF/MySQL/" itemprop="url"><span itemprop="name">MySQL</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='/images/user.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="/images/user.png">
-            <meta itemprop="name" content="李俊东">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2025-02-27T21:55:29+08:00">2025-02-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><span class="sep"></span><a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/PHP/">PHP</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url"><span itemprop="name">技术</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8A%80%E6%9C%AF/PHP/" itemprop="url"><span itemprop="name">PHP</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2025-03-21T12:48:58+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2025年3月21日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>日志主要分为错误日志、慢查日志、查询日志、事物日志、二进制日志类型。<br>像数据备份、主主、主备、主从、故障恢复等都需要通过binlog来做数据同步。<br>当MySQL执行增删改时都会在binlog<br>中留下记录日志，对于数据表的变更操作也会留下记录。</p>
+<p>binlog记录的数据</p>
+<ul>
+<li>DDl 用户操作数据库、表、行的记录。例如：Create、Drop、Alter</li>
+<li>DML 用户对数据的操作，例如：Insert、Update、Delete</li>
+<li>TCL 事物控制语言 Commit、Rollback</li>
+</ul>
+<p>以下MySQl语言则不会记录在binlog中。</p>
+<ul>
+<li>DCL 用来控制权限，例如Grant</li>
+<li>DQL 数据库查询语句，例如 Select</li>
+</ul>
+<h1 id="Binlog操作"><a href="#Binlog操作" class="headerlink" title="Binlog操作"></a>Binlog操作</h1><p><strong>查看当前MySQl对与binlog相关配置</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show variable like &quot;%bin_log%&quot;</span><br></pre></td></tr></table></figure>
+<p><img src="/../images/WechatIMG13.jpg" class="lazyload" data-srcset="/../images/WechatIMG13.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="WechatIMG13"></p>
+<ul>
+<li>bin_log: binlog日志记录是否开启</li>
+<li>bin_log_basename: binlog保存所在的文件夹</li>
+<li>bin_log_index: binlog的索引文件，通过索引文件可以查找到所有binlog文件</li>
+<li>sql_log_bin: 用于主从复制，如果关闭，数据的变更则不会记录到binlog日志中，而不会复制到丛库。</li>
+</ul>
+<p><strong>查看使用的类型</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show variables like &quot;%binlog_format%&quot;</span><br></pre></td></tr></table></figure>
+<p>展示当前记录binlog的类型。</p>
+<h2 id="Binlog日志类型"><a href="#Binlog日志类型" class="headerlink" title="Binlog日志类型"></a>Binlog日志类型</h2><h2 id="Stament"><a href="#Stament" class="headerlink" title="Stament:"></a>Stament:</h2><p>记录数据库表变更操作，生成的文件相对较小。</p>
+<h2 id="Row"><a href="#Row" class="headerlink" title="Row:"></a>Row:</h2><p>记录变更的数据内容，记录了整行内容，会导致文件较大。批量操作会产生大量日志，alter table会让数据大量增加。</p>
+<h2 id="Mixed"><a href="#Mixed" class="headerlink" title="Mixed:"></a>Mixed:</h2><p>混合使用Stament和Row，因为是系统自动选择使用某种方式，可能会选择不够理想的记录方式，导致一些不一致或性能影响。</p>
+<h1 id="同步机制"><a href="#同步机制" class="headerlink" title="同步机制"></a>同步机制</h1><p>MySQL Binlog主要解决主从复制功能，通过Binlog同步有三种方式，异步复制、同步复制、半同步复制。</p>
+<h2 id="异步复制"><a href="#异步复制" class="headerlink" title="异步复制"></a>异步复制</h2><p>MySQL在接收到执行命令，执行事务结束完后将日志记入Binlog中就直接返回客户端。</p>
+<p>并不关心从库是否同步成功。</p>
+<p>这样的隐患是，当主库执行完成记录binlog成功后，从库在未同步成功之前，主库当机了，这时从库变成主库，就导致这段Binlog内容丢失。</p>
+<h2 id="同步复制"><a href="#同步复制" class="headerlink" title="同步复制"></a>同步复制</h2><p>MySQL接收到执行命令，执行写入后，写入Binlog。</p>
+<p>通知从库开始同步。</p>
+<p>所有从库同步完成后发送ACK消息给主库。</p>
+<p>主库再提交事务。</p>
+<p>然后才会返回给客户端结果。</p>
+<p>这种同步机制会导致执行效率下降。</p>
+<h2 id="半异步复制"><a href="#半异步复制" class="headerlink" title="半异步复制"></a>半异步复制</h2><p>MySQL接收到执行命令，执行写入后，将日志写入Binlog。</p>
+<p>通知一个从库进行同步。</p>
+<p>从库同步完成后发送ACK给主库。</p>
+<p>主库再执行事务提交。</p>
+<p>然后主库才会返回客户端成功。</p>
+<p>因为也是需要等待从库同步成功的ACK消息，所以性能上也会有一定缺失。</p>
+<p><strong>MySQL5.7.2之后默认就是半异步复制机制</strong></p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2025-02-27/%E4%BD%A0%E7%9A%84-PHP-%E6%96%87%E7%AB%A0%E6%A0%87%E9%A2%98/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-03-21T13:44:30+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2025年3月21日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="http://blog.bb-dd.com/2019-04-24/hello-world/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="李俊东-博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="李俊东-博客">
-    <meta itemprop="description" content="李俊东-博客-description">
-  </span>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%8A%80%E6%9C%AF/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>技术</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%90%8E%E7%AB%AF/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>后端</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/MySQL/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>MySQL</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%90%86%E8%AE%BA/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>理论</p></a></div>
+  <span hidden itemprop="keywords">技术 后端 MySQL 理论</span>
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2025-03-14/Mac/'>
+          <p class='title'>Mac<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+设置Goland中Vim插件长按hjkl为连续操作
+1defaults write -g ApplePressAndHoldEnabled -bool false
+
+</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2025-03-21/MySQL-Binlog/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2019-04-24/hello-world/"  itemprop="url">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='/images/user.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="/images/user.png">
-            <meta itemprop="name" content="李俊东">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2019-04-24T15:30:30+08:00">2019-04-24</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a><span class="sep"></span><a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/PHP/">PHP</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url"><span itemprop="name">技术</span></a>
-            </span>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8A%80%E6%9C%AF/PHP/" itemprop="url"><span itemprop="name">PHP</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2019-04-24/hello-world/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-    
-  
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2771,69 +2818,6 @@ Qu...
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='/images/ad.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-          <p>点点滴滴</p>
-
-        
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:jackylee92@139.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
     
   
 
@@ -2841,152 +2825,19 @@ Qu...
     
     
       
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>所有分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%A8%B1%E4%B9%90/" href="/categories/%E5%A8%B1%E4%B9%90/"
-            active-action="action-categoriesE5A8B1E4B990"
-            ><div class='name'>娱乐</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%A8%B1%E4%B9%90/%E6%91%84%E5%BD%B1/" href="/categories/%E5%A8%B1%E4%B9%90/%E6%91%84%E5%BD%B1/"
-            active-action="action-categoriesE5A8B1E4B990E69184E5BDB1"
-            ><div class='name'>摄影</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%A8%B1%E4%B9%90/%E9%98%85%E8%AF%BB/" href="/categories/%E5%A8%B1%E4%B9%90/%E9%98%85%E8%AF%BB/"
-            active-action="action-categoriesE5A8B1E4B990E99885E8AFBB"
-            ><div class='name'>阅读</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E5%A8%B1%E4%B9%90/%E9%9F%B3%E4%B9%90/" href="/categories/%E5%A8%B1%E4%B9%90/%E9%9F%B3%E4%B9%90/"
-            active-action="action-categoriesE5A8B1E4B990E99FB3E4B990"
-            ><div class='name'>音乐</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%8A%80%E6%9C%AF/" href="/categories/%E6%8A%80%E6%9C%AF/"
-            active-action="action-categoriesE68A80E69CAF"
-            ><div class='name'>技术</div><div class='badge'>(7)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF/Go/" href="/categories/%E6%8A%80%E6%9C%AF/Go/"
-            active-action="action-categoriesE68A80E69CAFGo"
-            ><div class='name'>Go</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF/Kafka/" href="/categories/%E6%8A%80%E6%9C%AF/Kafka/"
-            active-action="action-categoriesE68A80E69CAFKafka"
-            ><div class='name'>Kafka</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF/MySQL/" href="/categories/%E6%8A%80%E6%9C%AF/MySQL/"
-            active-action="action-categoriesE68A80E69CAFMySQL"
-            ><div class='name'>MySQL</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF/PHP/" href="/categories/%E6%8A%80%E6%9C%AF/PHP/"
-            active-action="action-categoriesE68A80E69CAFPHP"
-            ><div class='name'>PHP</div><div class='badge'>(2)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>所有标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Go/" style="font-size: 16.5px; color: #888">Go</a> <a href="/tags/MySQL/" style="font-size: 16.5px; color: #888">MySQL</a> <a href="/tags/PHP/" style="font-size: 14px; color: #999">PHP</a> <a href="/tags/TODO/" style="font-size: 14px; color: #999">TODO</a> <a href="/tags/kafka/" style="font-size: 14px; color: #999">kafka</a> <a href="/tags/%E5%90%89%E4%BB%96/" style="font-size: 14px; color: #999">吉他</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 19px; color: #777">后端</a> <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 14px; color: #999">基础</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 24px; color: #555">技术</a> <a href="/tags/%E6%91%84%E5%BD%B1/" style="font-size: 14px; color: #999">摄影</a> <a href="/tags/%E6%96%B0%E6%89%8B/" style="font-size: 16.5px; color: #888">新手</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 21.5px; color: #666">测试</a> <a href="/tags/%E7%8C%AE%E7%BB%99%E9%98%BF%E5%B0%94%E5%90%89%E4%BE%AC%E7%9A%84%E8%8A%B1%E6%9D%9F/" style="font-size: 14px; color: #999">献给阿尔吉侬的花束</a> <a href="/tags/%E7%90%86%E8%AE%BA/" style="font-size: 16.5px; color: #888">理论</a> <a href="/tags/%E9%98%85%E8%AF%BB/" style="font-size: 14px; color: #999">阅读</a> <a href="/tags/%E9%9F%B3%E4%B9%90/" style="font-size: 16.5px; color: #888">音乐</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
+<section class="widget text desktop pjax">
   
   <header>
     
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+      <i class="fab fa-book fa-fw" aria-hidden="true"></i><span class='name'>如何写好这篇文章</span>
     
   </header>
 
 
   <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>13 篇</div>
-        </div>
-      
-
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2025-03-21 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
-  
+      <p><span class="jinrishici-sentence">1. 先整理大纲</br> 2. 补充初略细节</br> 3. 补充完整细节标</br> 4. 标注重点内容</br> 5. 补充图片、检查逻辑通顺,提高文章可读性</br> 6. AI整理</spnn></p>
 
-  
-    
-    
-      
-<section class="widget qrcode desktop mobile pjax">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='/images/ad.jpg'
-      
-        height='64px'
-      />
     
   </div>
 </section>
@@ -2997,10 +2848,46 @@ Qu...
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Binlog%E6%97%A5%E5%BF%97%E7%B1%BB%E5%9E%8B"><span class="toc-text">Binlog日志类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Stament"><span class="toc-text">Stament:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Row"><span class="toc-text">Row:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mixed"><span class="toc-text">Mixed:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E6%AD%A5%E5%A4%8D%E5%88%B6"><span class="toc-text">异步复制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E5%A4%8D%E5%88%B6"><span class="toc-text">同步复制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8A%E5%BC%82%E6%AD%A5%E5%A4%8D%E5%88%B6"><span class="toc-text">半异步复制</span></a></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3024,13 +2911,14 @@ Qu...
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3544,7 +3432,7 @@ Qu...
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"李俊东-博客","url":"http://blog.bb-dd.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"李俊东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.bb-dd.com/","sameAs":["https://github.com/volantis-x"],"description":"李俊东-博客-description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.bb-dd.com/","name":"李俊东-博客"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.bb-dd.com/categories/PHP/","name":"PHP"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"李俊东-博客","url":"http://blog.bb-dd.com/","keywords":"李俊东 博客 技术 php golang","description":"李俊东-博客-description","author":{"@type":"Person","name":"李俊东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.bb-dd.com/","description":"李俊东-博客-description"},"publisher":{"@type":"Organization","name":"李俊东-博客","url":"http://blog.bb-dd.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.bb-dd.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"李俊东-博客-description","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"李俊东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.bb-dd.com/"},"publisher":{"@type":"Organization","name":"李俊东-博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"李俊东-博客","url":"http://blog.bb-dd.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"李俊东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.bb-dd.com/","sameAs":["https://github.com/volantis-x"],"description":"李俊东-博客-description"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.bb-dd.com/","name":"李俊东-博客"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.bb-dd.com/categories/技术/","name":"技术"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.bb-dd.com/categories/技术/MySQL/","name":"MySQL"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.bb-dd.com/2025-03-21/MySQL-Binlog/","name":"MySQL Binlog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"李俊东-博客","url":"http://blog.bb-dd.com/","keywords":"李俊东 博客 技术 php golang","description":"李俊东-博客-description","author":{"@type":"Person","name":"李俊东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.bb-dd.com/","description":"李俊东-博客-description"},"publisher":{"@type":"Organization","name":"李俊东-博客","url":"http://blog.bb-dd.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.bb-dd.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"MySQL Binlog","description":"李俊东-博客-description","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.bb-dd.com/2025-03-21/MySQL-Binlog/"},"author":{"@type":"Person","name":"李俊东","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.bb-dd.com/"},"publisher":{"@type":"Organization","name":"李俊东-博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.bb-dd.com/2025-03-21/MySQL-Binlog/","wordCount":0,"datePublished":"2025-03-21T04:48:58.000Z","dateModified":"2025-03-21T05:44:30.052Z","articleSection":"技术","keywords":"技术,后端,MySQL,理论","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
